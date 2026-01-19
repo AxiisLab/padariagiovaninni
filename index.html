@@ -204,7 +204,8 @@
                     cartItems.forEach(item => { message += `${item.quantity}x ${item.name} \n(R$ ${(item.price * item.quantity).toFixed(2)})\n`; });
                     if(notes) message += `\n*Obs:* ${notes}\n`;
                     message += `\n*Entrega:* ${deliveryFee === 0 ? 'GRÁTIS' : `R$ ${deliveryFee.toFixed(2)}`}\n*TOTAL: R$ ${total.toFixed(2)}*\n-----------------------------\n_Pedido registrado._`;
-                    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`, '_blank');
+                    // Número do WhatsApp atualizado (55 + DDD + Número)
+                    window.open(`https://wa.me/5531987133022?text=${encodeURIComponent(message)}`, '_blank');
                     onClose(); alert("Pedido enviado!");
                 } catch (error) { alert("Erro ao registrar."); } finally { setIsSubmitting(false); }
             };
