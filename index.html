@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag para garantir que o domínio seja enviado corretamente para o Google validar a segurança -->
+    <meta name="referrer" content="origin">
     <title>Padaria Giovaninni Delivery</title>
     
     <!-- 1. ESTILOS (Tailwind CSS) -->
@@ -35,7 +37,9 @@
 
     <script type="text/babel">
         // ==================================================================================
-        // ⚠️ ÁREA DE CONFIGURAÇÃO (SUAS CHAVES REAIS) ⚠️
+        // ⚠️ NOTA DE SEGURANÇA: 
+        // É normal esta chave estar visível. A segurança é feita restringindo o DOMÍNIO
+        // no Google Cloud Console (APIs & Services > Credentials > Restrict to HTTP Referrers).
         // ==================================================================================
         
         const firebaseConfig = {
@@ -678,4 +682,3 @@
     </script>
 </body>
 </html>
-
